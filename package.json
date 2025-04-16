@@ -1,0 +1,21 @@
+{
+  "name": "roman-numeral-converter",
+  "version": "1.0.0",
+  "description": "A JavaScript application that converts Roman numerals to integers",
+  "main": "src/romanConverter.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "roman",
+    "numeral",
+    "converter",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
