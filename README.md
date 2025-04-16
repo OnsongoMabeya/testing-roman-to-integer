@@ -16,6 +16,75 @@ A JavaScript application that converts Roman numerals to their corresponding int
 npm install
 ```
 
+## Testing
+
+Run the test suite:
+
+```bash
+npm test
+```
+
+### Test Results
+
+The test suite includes comprehensive tests for all functionality:
+
+```bash
+> roman-numeral-converter@1.0.0 test
+> jest
+
+ PASS  tests/romanConverter.test.js
+  Roman Numeral Converter
+    ✓ converts single letters correctly
+    ✓ converts multiple letter combinations correctly
+    ✓ handles subtractive notation correctly
+    ✓ handles complex examples correctly
+    ✓ throws error for null input
+    ✓ throws error for invalid characters
+    ✓ throws error for invalid repetitions
+    ✓ throws error for invalid subtractive notation
+    ✓ throws error for non-string input
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        0.245 s
+Ran all test suites.
+```
+
+### Test Coverage
+
+The project maintains 100% test coverage across all metrics:
+
+```bash
+> roman-numeral-converter@1.0.0 test:coverage
+> jest --coverage
+
+ PASS  tests/romanConverter.test.js
+  Roman Numeral Converter
+    ✓ converts single letters correctly (1 ms)
+    ✓ converts multiple letter combinations correctly
+    ✓ handles subtractive notation correctly (1 ms)
+    ✓ handles complex examples correctly
+    ✓ throws error for null input (5 ms)
+    ✓ throws error for invalid characters
+    ✓ throws error for invalid repetitions
+    ✓ throws error for invalid subtractive notation (2 ms)
+    ✓ throws error for non-string input (1 ms)
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |     100 |      100 |     100 |     100 |                   
+ romanConverter.js |     100 |      100 |     100 |     100 |                   
+ validators.js     |     100 |      100 |     100 |     100 |                   
+-------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 1 passed, 1 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        0.264 s, estimated 1 s
+Ran all test suites.
+```
+
 ## Usage
 
 ```javascript
@@ -31,14 +100,6 @@ try {
 } catch (error) {
     console.error(error.message);
 }
-```
-
-## Testing
-
-Run the test suite:
-
-```bash
-npm test
 ```
 
 ## Error Messages
